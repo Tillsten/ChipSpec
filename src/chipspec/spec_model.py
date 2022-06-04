@@ -15,6 +15,8 @@ class Spectrum:
 
 
 class ISpectrometer(Protocol):
+    wavelengths: np.ndarray = field()
+    
     def start_reading(self, integration_time: float, n_samples: int):
         ...
 

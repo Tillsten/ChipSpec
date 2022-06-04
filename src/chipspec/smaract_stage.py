@@ -3,7 +3,7 @@ import time
 import attr
 import sys
 import typing
-from stage_model import XYZStage
+from chipspec.stage_model import XYZStage
 from smaract import ctl
 
 
@@ -59,6 +59,4 @@ class SmarActXYZ(XYZStage):
         return "MCS2 {}: {}, error: {} (0x{:04X}) in line: {}.".format(e.func, ctl.GetResultInfo(e.code),
                                                                        ctl.ErrorCode(e.code).name, e.code,
                                                                        sys.exc_info()[-1].tb_lineno
-                                                                       )
-
-
+                                                                     
