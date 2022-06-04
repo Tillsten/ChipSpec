@@ -1,0 +1,7 @@
+qtpy
+numpy
+attrs
+pyqtgraph
+matplotlib
+lmfit
+h5py
